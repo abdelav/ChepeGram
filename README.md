@@ -1,4 +1,0 @@
-ChepeGram
-=========
-
-Personal Project
