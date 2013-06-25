@@ -6,7 +6,10 @@ angular.module('chepeGramApp', ['mongolabResourceHttp'])
     $routeProvider
       .when('/', {
         controller: 'AppController',
-        templateUrl:'views/main.html'
+        templateUrl:'views/main.html',
+        resolve:{
+          project:function(Project){return new Project();}
+        }
       })
       .otherwise({
         redirectTo: '/'
